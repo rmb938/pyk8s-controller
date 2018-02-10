@@ -9,10 +9,10 @@ install:
 script: tox
 deploy:
   provider: pypi
-  condition: $TOXENV = build
   distributions: bdist_wheel
   user: rmb938
   password:
     secure: Jie25NlXUbAeIoO8OcsB16JuOjyi1xFZOuZCHMjkGdhFdjvL1uENLexvA7ttbG2+iUrjw50KXj2w7R14uRC6C4nc5aCDuq1Curm9iv3X7mhbDiKoJrpiyG0uwQBPnYrd1eiHQ5ajS7D7vVP6LETzA3p07qZwJyYQgiHaVqgV2YaZ6aBh3UAK/FEFB/WamJsO9eUFTsL++ktyUkagr/8VY8IGmenU6p28zO0yF69kT1DxCjQFFLsV/AGIsTme5cuZMzPytfs1dBUpGI+57Ci/y/TRxmaXo24kRDWQFTQuyWy0alQ8DcV+J2T8dnubmxDERVLN81tV74o9J2VEu2t5iO/IebJHk4CcWJTc8rMIbYpIwTtTfkV/o9JkX6ozQeOB0j8e0mCwV+2VahznZN2IPP1rK4pjAa7KzNX6UYMKVZfB13mbmIg58FnGk46Zm6s5vPe1NdCvWdvH0kZKHDkQjD6/jTVrD5qNgfTjKAyTYMElKH/lv08Q9skp/13jMBwSzYFTy2aEU38L2LW65BqGTax2yoJgAQ0i4yxXj1O6MKHWbIYD2zE1U0r+PI/yuJZH/qoHiWcQ1rvxR+JBneLiJUh49Xo9H97A62NFvo3dYMKWcq/ZjGDRYl3iH6tastJ23WT0sKWLTLrrPZ1hbaHG3NtLoWDouaQDay6DLI3o3z8=
   on:
     tags: true
+    condition: $TOXENV = build
