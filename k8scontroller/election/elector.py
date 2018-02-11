@@ -23,7 +23,7 @@ class LeaderElector(threading.Thread):
         self.retry_period = 2
 
         # Election Info
-        self.election_name = election_name,
+        self.election_name = election_name
         self.election_namespace = election_namespace
 
         # async functions
