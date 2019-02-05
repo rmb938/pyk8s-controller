@@ -43,7 +43,7 @@ class InformerWatch(Thread):
 
                     self.cache.add(cache_key, obj)
                     self.queue.put((operation, obj))
-            except Exception as e:
+            except Exception:
                 self.logger.error(
                     "Caught Exception while watching " + self.name +
                     " sleeping for 30 seconds before trying again. Enable debug logging to see exception")
