@@ -1,2 +1,2 @@
-go-defer==1.0.1 # BSD 3-clause
-kubernetes==4.0.0 # Apache 2.0
+go-defer>=1.0.1 # BSD 3-clause
+kubernetes>=4.0.0 # Apache 2.0
